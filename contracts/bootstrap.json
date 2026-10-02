@@ -1,0 +1,10 @@
+{
+  "schema": "clearcast.bootstrap/1",
+  "architecturePath": "docs/architecture.md",
+  "architectureSha256": "66fb7f2e10a66262cea59f7715fd46e4c222116ed4752fa377d0a2b99efaaa4e",
+  "productName": "Clearcast",
+  "productGateStatus": "NOT_RUN",
+  "bootstrapNodeMajor": 24,
+  "bootstrapPackageManager": "pnpm@11.25.0",
+  "liveCapabilitiesVerified": false
+}

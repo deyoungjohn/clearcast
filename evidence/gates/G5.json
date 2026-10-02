@@ -1,0 +1,16 @@
+{
+  "gateId": "G5",
+  "status": "NOT_RUN",
+  "commit": null,
+  "environment": "local",
+  "startedAt": null,
+  "finishedAt": null,
+  "executor": null,
+  "reviewer": null,
+  "checks": [],
+  "artifactPaths": [],
+  "artifacts": [],
+  "inputs": {},
+  "blockingFindings": [],
+  "decision": "STOP"
+}
