@@ -4,7 +4,7 @@ Select `deyoungjohn/clearcast`, branch `main`, in your Codex environment. Reposi
 
 ## Setup script
 
-Use a Node 24 runtime and this setup command from the repository root:
+Choose **manual setup** and use this command from the repository root:
 
 ```bash
 bash scripts/codex-setup.sh
@@ -16,7 +16,7 @@ Optional maintenance command for resumed environments:
 bash scripts/codex-maintenance.sh
 ```
 
-The setup installs the exact pinned pnpm version when necessary, installs from the committed lockfile, and runs bootstrap checks. It does not create accounts, contact customers, fund wallets, sign transactions, or pass product gates.
+The setup installs and selects Node 24 through the environment's existing `nvm` when needed. It sets the nvm default and adds a runtime-only initializer to `~/.bashrc` for subsequent shells. If nvm is unavailable, select Node 24 in the environment runtime settings before retrying. The setup installs the exact pinned pnpm version when necessary, installs from the committed lockfile, and runs bootstrap checks. It does not create accounts, contact customers, fund wallets, sign transactions, or pass product gates.
 
 Agent network access is needed for official documentation/registry research and selected read-only source/Panta probes. Configure only the domains actually required by the current spike: official documentation, the package registry, the verified source host, and the verified Panta host. Setup internet access and agent internet access are separate controls. A host returning a proxy HTML page is not a successful JSON response.
 
