@@ -1,0 +1,23 @@
+{
+  "schema": "clearcast.toolchain/1",
+  "checkedAt": "2026-10-02",
+  "status": "PARTIAL_DISCOVERY",
+  "runtime": { "node": "24.21.0", "pnpm": "11.25.0", "containerImageDigest": null },
+  "dependencies": {
+    "decimal.js": "10.6.0",
+    "lossless-json": "4.3.0",
+    "typescript": "5.9.3",
+    "tsx": "4.20.6",
+    "@types/node": "24.10.0"
+  },
+  "registry": "https://registry.npmjs.org/",
+  "supportSources": [
+    "https://nodejs.org/en/about/previous-releases",
+    "https://www.npmjs.com/package/decimal.js",
+    "https://www.npmjs.com/package/lossless-json"
+  ],
+  "limitations": [
+    "This is the minimal source/evaluator spike dependency set, not the complete G0.5 matrix.",
+    "Container image digest, Solana signing/simulation, wallet harness, license inventory, and full selected-family compatibility remain unverified."
+  ]
+}

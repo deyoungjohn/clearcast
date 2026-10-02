@@ -1,0 +1,15 @@
+{
+  "schema": "clearcast.identifier-map/1",
+  "status": "PROVISIONAL_UNDEPLOYED",
+  "policy": "New Clearcast protocols use the mapped identifiers. Historical blueprint identifiers are not byte-compatible and are never silently renamed inside existing hashes.",
+  "identifiers": {
+    "clerk.spec/1": "clearcast.spec/1",
+    "clerk.publish-plan/1": "clearcast.publish-plan/1",
+    "clerk.panta-capabilities/1": "clearcast.panta-capabilities/1",
+    "clerk.approval/1": "clearcast.approval/1",
+    "clerk.plan/1": "clearcast.plan/1",
+    "clerk:v1:approve:": "clearcast:v1:approve:",
+    "clerk:": "clearcast:"
+  },
+  "cookieNames": {}
+}
