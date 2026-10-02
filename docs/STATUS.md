@@ -24,3 +24,9 @@ Use `docs/CODEX_START_PROMPT.md`. Implement the phase-zero source and Panta read
 ## Required task handoff fields
 
 Every subsequent task updates: commit, implemented files/behavior, exact executed commands and results, actual gate artifacts, blockers with reproducing steps, and the next bounded task. Do not copy secrets or raw user-study responses here.
+
+## Node runtime setup fix — 2 October 2026
+
+Fixed the Node 20 bootstrap failure in commit `0bd48ce60d764d4a35e2afc082449777f845c686` on `main`; regression tests and setup instructions follow in commits `c1c38a0b07f2b3b8b1c340ece72be5688ed8a752` and `26ea8a2a475481549e62026b864462373cd81874`. Setup now installs/selects Node 24 through existing nvm and persists runtime selection for subsequent Bash shells.
+
+Verified locally: `bash -n scripts/codex-setup.sh`, `bash scripts/codex-setup.sh` on Node 24, `pnpm check`, and `pnpm test` (9 passed). Node 20 selection, subsequent-shell initialization, and repeated setup were tested with a stubbed version manager; a real Node download in the user's cloud environment has not been run here. Product gates remain NOT_RUN. Next action: retry environment setup against current main, then execute the bounded phase-zero starting prompt.
